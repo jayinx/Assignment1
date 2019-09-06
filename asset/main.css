@@ -1,0 +1,216 @@
+body {
+  background-color: #FF4343;
+}
+/* navagation bar */
+header{
+  text-align: center;
+  z-index: 999;
+  width: 100%;
+}
+.logo{
+  color:#FF4343;
+}
+.nav-toggle{
+  display: none;
+}
+
+.nav-toggle-label{
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 1em;
+  height: 6%;
+  display: flex;
+  align-items: center;
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+  display: block;
+  background: white;
+  height: 2px;
+  width: 1.6em;
+  border-radius: 2px;
+  position: relative;
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after{
+  content: '';
+  position: absolute;
+}
+
+.nav-toggle-label span::before{
+  bottom: 7px;
+}
+
+.nav-toggle-label span::after{
+  top: 7px;
+}
+
+nav{
+  text-align: left;
+  top: 100%;
+  left: 0;
+  background-color: #FF4343;
+  width: 100%;
+  transform: scale(1,0);
+  transform-origin: top;
+  transition: transform 400ms ease-in-out;
+}
+
+nav ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li{
+  margin-bottom: 1em;
+  margin-left: 1em;
+}
+
+nav a{
+font: Bold 1rem Arial;
+letter-spacing: 0;
+color: #000000;
+opacity: 1;
+text-decoration: none;
+opacity: 0;
+transition: opacity 150ms ease-in-out;
+}
+
+nav a:hover{
+  color: #FFFFFF
+}
+.nav-toggle:checked ~ nav{
+ transform: scale(1,1);
+}
+
+.nav-toggle:checked ~ nav a{
+  opacity: 1;
+  transition: opacity 250ms ease-in-out 250ms;
+}
+
+/*title page*/
+.titlepage svg{
+  width: 90%;
+  margin-left: 5%;
+  margin-top: -7em;}
+
+  .titlepage p{
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 1em;
+    text-align: left;
+    font-weight: black;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    opacity: 1;
+    width: 40%;
+    margin-left: 55%;
+    margin-top: -3em;
+  }
+
+/* project page*/
+.projectone img{
+  width: 12em;
+  margin-top:5em;
+  margin-left: -11em;
+}
+
+.projectone h1{
+  margin-top: -3em;
+  margin-left: 7em;
+  margin-bottom: 0;
+  font-family: 'Red Hat Display', sans-serif;
+  font-size: 3em;
+  font-weight: black;
+  color: white;
+}
+
+.projectone p{
+  font-family: 'Red Hat Display', sans-serif;
+  margin-top: .5em;
+  margin-left: 25em;
+  width: 20em;
+  font-size: 1em;
+}
+
+.onecircle{
+  width: 300px;
+  height: 300px;
+  fill:white;
+  margin-left: 3em;
+}
+
+/* this is the computer view port style sheet*/
+
+@media screen and (min-width: 1100px) {
+  .nav-toggle-label{
+    display: none;
+  }
+
+  header{
+    height: 100px;
+    display: grid;
+  }
+
+  nav{
+    all: unset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  nav ul{
+    display: flex;
+  }
+
+  nav li{
+    margin-right: 5.5em;
+    margin-left: 10em;
+    margin-bottom: 0;
+  }
+
+  nav a {
+    opacity: 1;
+  }
+
+  /* title page */
+
+  .titlepage svg{
+    width: 70%;
+    margin-left:  15%;
+    margin-top: 5%;
+  }
+  .titlepage p{
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 1.4em;
+    text-align: left;
+    font-weight: black;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    opacity: 1;
+    width: 30%;
+    margin-left: 55%;
+    margin-top: -3em;
+  }
+
+  /* style for projet one*/
+
+  .projectone h1{
+    margin-top: -6em;
+    margin-left: 15em;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 3em;
+    font-weight: black;
+    color: white;
+  }
+  .projectone p{
+    font-family: 'Red Hat Display', sans-serif;
+    margin-top: 0;
+    margin-left: 49em;
+    width: 20em;
+    font-size: 1em;
+  }
+}
