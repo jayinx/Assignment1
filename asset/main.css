@@ -1,63 +1,11 @@
 body {
   background-color: #FF4343;
 }
-/* navagation bar */
-header{
-  text-align: center;
-  z-index: 999;
-  width: 100%;
-}
-.logo{
-  color:#FF4343;
-}
-.nav-toggle{
-  display: none;
-}
-
-.nav-toggle-label{
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin-left: 1em;
-  height: 6%;
-  display: flex;
-  align-items: center;
-}
-
-.nav-toggle-label span,
-.nav-toggle-label span::before,
-.nav-toggle-label span::after {
-  display: block;
-  background: white;
-  height: 2px;
-  width: 1.6em;
-  border-radius: 2px;
-  position: relative;
-}
-
-.nav-toggle-label span::before,
-.nav-toggle-label span::after{
-  content: '';
-  position: absolute;
-}
-
-.nav-toggle-label span::before{
-  bottom: 7px;
-}
-
-.nav-toggle-label span::after{
-  top: 7px;
-}
-
 nav{
   text-align: left;
   top: 100%;
   left: 0;
-  background-color: #FF4343;
   width: 100%;
-  transform: scale(1,0);
-  transform-origin: top;
-  transition: transform 400ms ease-in-out;
 }
 
 nav ul{
@@ -83,14 +31,6 @@ transition: opacity 150ms ease-in-out;
 
 nav a:hover{
   color: #FFFFFF
-}
-.nav-toggle:checked ~ nav{
- transform: scale(1,1);
-}
-
-.nav-toggle:checked ~ nav a{
-  opacity: 1;
-  transition: opacity 250ms ease-in-out 250ms;
 }
 
 /*title page*/
@@ -143,17 +83,20 @@ nav a:hover{
   fill:white;
   margin-left: 3em;
 }
+circle{
+  r:50px;
+  cx:100px;
+  cy:100px;
+  color:white;
+}
 
-/* this is the computer view port style sheet*/
+/********* 😘😗this is the computer view port style sheet 😘😗*******/
 
 @media screen and (min-width: 1100px) {
-  .nav-toggle-label{
-    display: none;
-  }
-
   header{
     height: 100px;
-    display: grid;
+    display: inline-grid;
+    grid-template-columns:repeat(3,1fr);
   }
 
   nav{
@@ -161,6 +104,7 @@ nav a:hover{
     display: flex;
     justify-content: center;
     align-items: center;
+    grid-column: 2;
   }
   nav ul{
     display: flex;
@@ -187,13 +131,12 @@ nav a:hover{
     font-family: 'Red Hat Display', sans-serif;
     font-size: 1.4em;
     text-align: left;
-    font-weight: black;
     letter-spacing: 0;
     color: #FFFFFF;
     opacity: 1;
-    width: 30%;
-    margin-left: 55%;
-    margin-top: -3em;
+    width: 40%;
+    margin-left: 45%;
+    margin-top: -2.5em;
   }
 
   /* style for projet one*/
@@ -213,4 +156,16 @@ nav a:hover{
     width: 20em;
     font-size: 1em;
   }
+}
+
+@media screen and (max-width: 414px){
+  .titlepage p{
+   display: none;
+  }
+  .projectone img {
+    width: 7em;
+    margin-top: -40em;
+    margin-left: 3em;
+}
+
 }
