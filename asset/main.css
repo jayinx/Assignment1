@@ -50,7 +50,7 @@ nav a:hover{
   margin-bottom: 0;
   font-family: 'Red Hat Display', sans-serif;
   font-size: 3em;
-  font-weight: black;
+  font-weight: bold;
   color: white;
 }
 
@@ -60,19 +60,6 @@ nav a:hover{
   margin-left: 25em;
   width: 20em;
   font-size: 1em;
-}
-
-.onecircle{
-  width: 300px;
-  height: 300px;
-  fill:white;
-  margin-left: 3em;
-}
-circle{
-  r:50px;
-  cx:100px;
-  cy:100px;
-  color:white;
 }
 
 /********* 😘😗this is the computer view port style sheet 😘😗*******/
@@ -104,7 +91,7 @@ circle{
   nav a {
     opacity: 1;
   }
-  
+
   .titlepage p{
     font-family: 'Red Hat Display', sans-serif;
     font-size: 1em;
@@ -174,35 +161,42 @@ circle{
   nav a{
     background: black;
   }
-  
+
 /***** 💡title page 💡 *****/
   .phone{
    margin-top: 0px;
    width:70%;
    margin-left: 15%;
   }
-  
+
   .titlepage svg{
     display: none;
   }
-  
+
   .titlepage p{
     display: none;
   }
-  
-  
-  
+  .projectone img{
+    width: 40%;
+    margin-top: 50%;
+    margin-left: 30%;
+  }
+  .projectone h1 {
+      margin-top: 15%;
+      margin-left: 5%;
+      font-size: 1.7em;
+      width:90%;
+  }
+  .projectone p{
+    margin-left: 15%;
+    width:70%;
+    text-align: center;
+  }
+  #javaScriptPattern{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    
+  }
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
