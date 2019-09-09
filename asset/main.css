@@ -35,18 +35,7 @@ nav a:hover{
 
 /***** 💡title page 💡 *****/
 
-  .titlepage p{
-    font-family: 'Red Hat Display', sans-serif;
-    font-size: 1em;
-    text-align: left;
-    font-weight: black;
-    letter-spacing: 0;
-    color: #FFFFFF;
-    opacity: 1;
-    width: 40%;
-    margin-left: 55%;
-    margin-top: -3em;
-  }
+
 
 /***** 🐹project 1️⃣ page 🐹 *****/
 .projectone img{
@@ -115,6 +104,19 @@ circle{
   nav a {
     opacity: 1;
   }
+  
+  .titlepage p{
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 1em;
+    text-align: left;
+    font-weight: black;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    opacity: 1;
+    width: 40%;
+    margin-left: 55%;
+    margin-top: -3em;
+  }
 
 /***** 💡title page 💡 *****/
 
@@ -135,6 +137,10 @@ circle{
     margin-top: -2.5em;
   }
 
+  .phone{
+    display: none;
+  }
+
 /***** 🐹project 1️⃣ page 🐹 *****/
 
   .projectone h1{
@@ -145,15 +151,11 @@ circle{
     font-weight: bold;
     color: white;
   }
-  
+
   #javaScriptPattern{
     list-style: none;
     text-decoration: none;
     color: white;
-  }
-
-  #javaScriptPattern a:hover{
-    color:black;
   }
 
   .projectone p{
@@ -165,3 +167,42 @@ circle{
     line-height: 1.4;
   }
 }
+
+/********* 😘😗this is the iphone view port style sheet 😘😗*******/
+@media screen and (max-width: 450px){
+
+  nav a{
+    background: black;
+  }
+  
+/***** 💡title page 💡 *****/
+  .phone{
+   margin-top: 0px;
+   width:70%;
+   margin-left: 15%;
+  }
+  
+  .titlepage svg{
+    display: none;
+  }
+  
+  .titlepage p{
+    display: none;
+  }
+  
+  
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
