@@ -151,6 +151,11 @@ nav a:hover{
     font-size: 1.2em;
     line-height: 1.4;
   }
+
+  .empty{
+    height: 300px;
+  }
+
 }
 
 /********* 😘😗this is the iphone view port style sheet 😘😗*******/
